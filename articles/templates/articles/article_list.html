@@ -2,10 +2,12 @@
 {%extends 'base_layout.html'%}
 
 
-    
+
 
 {% block content%}
     <h1>Articles List</h1>
+    <br>
+    <br>
     <div class="articles">
     {% for article in articles %}
         <div class="article">
@@ -13,6 +15,8 @@
             <p>{{ article.snippet }}</p>
             <p>{{ article.date }}</p>
         </div>
+        <br>
+        <br>
     {% endfor %}
     </div>
 {% endblock %}
